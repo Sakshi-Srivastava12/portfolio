@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Projects</title>
+
+<link rel="stylesheet" href="cv.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div class="floating-icons">
+
+<i class="fab fa-python"></i>
+<i class="fab fa-java"></i>
+<i class="fab fa-js"></i>
+<i class="fab fa-react"></i>
+<i class="fab fa-html5"></i>
+<i class="fab fa-css3"></i>
+<i class="fas fa-database"></i>
+<i class="fas fa-code"></i>
+<i class="fab fa-github"></i>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">SS Portfolio</div>
+
+<ul class="menu">
+<li><a href="cv.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="achievements.html">Achievements</a></li>
+<li><a href="certifications.html">Certifications</a></li>
+<li><a href="academics.html">Academics</a></li>
+<li><a href="experience.html">Experience</a></li>
+<li><a href="resume.html">CV</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+
+
+<section class="projects">
+
+<h2 class="title">Featured Projects</h2>
+
+
+<!-- FILTER BUTTONS -->
+
+<div class="project-filters">
+  <button onclick="filterProjects('all')" class="active">All Projects</button>
+  <button onclick="filterProjects('fullstack')">Full Stack</button>
+  <button onclick="filterProjects('ai')">AI Projects</button>
+  <button onclick="filterProjects('frontend')">Frontend</button>
+  <button onclick="filterProjects('api')">API Integration</button>
+  <button onclick="filterProjects('webapp')">Web App</button>
+</div>
+
+
+
+<!-- PROJECT GRID -->
+
+<div class="project-grid">
+
+
+<!-- PROJECT 1 -->
+
+<div class="project-card api">
+
+<img src="images/ai.jpg">
+
+<div class="project-info">
+
+<h3>AI Proctored Online Examination System</h3>
+
+<p>
+AI-based exam platform with webcam monitoring using
+Java, JavaFX, MySQL and FFMPEG.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PROJECT 2 -->
+
+<div class="project-card ai">
+
+<img src="images/stu.jpg">
+
+<div class="project-info">
+
+<h3>Student Placement Prediction</h3>
+
+<p>
+Machine learning model predicting student placement
+using Python, Scikit-learn and Streamlit.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+<div class="project-card ai">
+
+<img src="images/lang.png">
+
+<div class="project-info">
+
+<h3>Language Exchange Platform</h3>
+
+<p>
+Real-time translation chatbot built using Python
+and Flask with API communication.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+<script>
+
+function filterProjects(category){
+
+let projects = document.querySelectorAll(".project-card");
+
+projects.forEach(project => {
+
+if(category === "all"){
+project.style.display = "block";
+}
+
+else if(project.classList.contains(category)){
+project.style.display = "block";
+}
+
+else{
+project.style.display = "none";
+}
+
+});
+
+}
+
+</script>
+
+
+</body>
+</html>
