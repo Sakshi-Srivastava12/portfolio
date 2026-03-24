@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "src": "^/$", "dest": "/resume.html" }
+    { "src": "^/$", "dest": "/cv.html" }
   ]
 }
